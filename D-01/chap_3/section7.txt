@@ -1,0 +1,12 @@
+question 5: 
+    a et b
+question 6: 
+Il n’est pas judicieux d’utiliser plusieurs underscores adjacents car :
+-> Certains sont réservés au compilateur/bibliothèque (risque de conflit)(ex __DATE__ __FILE__)
+-> Cela réduit la lisibilité du code.
+-> Ce n’est pas une bonne pratique de style.
+
+question 7:
+ for, if, printf, while (main n’est pas une instruction du langage C.C’est simplement le nom de la fonction que le système d’exploitation appelle en premier quand un programme C démarre.)
+
+ 

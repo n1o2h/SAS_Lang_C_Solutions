@@ -1,0 +1,7 @@
+question 8: 
+ il y a 4 jetons
+
+question 9:
+     answer = (3 * q - p * p) / 3;
+question 10 :
+ les espaces necessaire seul entre int main, et dans la declaration et dans return
