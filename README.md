@@ -1,4 +1,4 @@
-<header>GCC et le langage C:</header>
+<h1>GCC et le langage C:</h1>
 
 <h1>Que signifie GCC ?</h1>
 GCC veut dire GNU Compiler Collection. C’est un programme qui traduit le code C (et d’autres langages) en langage machine que l’ordinateur peut exécuter.
