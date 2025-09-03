@@ -8,7 +8,7 @@ int main(){
 
     for(int i=1;i<=n;i++){
         car = i*i;
-        if(car %2 == 0 && car <= 100)
+        if(car %2 == 0 && car <= n)
             printf("%d\n", car);
     }
 }
