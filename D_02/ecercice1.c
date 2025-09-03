@@ -15,7 +15,7 @@ int main(){
         printf("prefixe GS1: %d%d%d", isbn[0], isbn[1], isbn[2]);
     
     for(int i=0; i<length;i++){
-        if(isbn[i] == 9 && (isbn[i+1]))
+        if(isbn[i] == 9 && (isbn[i+1])) 
     
     
 

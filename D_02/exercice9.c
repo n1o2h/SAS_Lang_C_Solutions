@@ -30,7 +30,7 @@ int main(){
         else if(N[i] == 'W' || N[i] == 'X' || N[i] == 'Y')
             printf("9");
         else 
-            continue;
+            printf("%c", N[i]);
         }
         return 0;
     }
