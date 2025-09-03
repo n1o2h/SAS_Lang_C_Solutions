@@ -7,9 +7,10 @@ int main(){
     char N[50];
 
     printf("Enter le numero de telephone: ");
-    fgets(N, sizeof(N), stdin);
-    
-    size_t length;
+    // fgets(N, sizeof(N), stdin); // se termine par \n not \0
+    scanf("%s", N);
+
+    int length;
     length = strlen(N);
         
         for(int i=0; i<length; i++){
