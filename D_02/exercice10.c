@@ -3,7 +3,7 @@
 int main(){
     printf("l'affichage des valeurs: \n");
     printf("\nentier: %d",sizeof(int));
-    printf("\nshrt: %d",sizeof(short));
+    printf("\nshort: %d",sizeof(short));
     printf("\nlong: %d",sizeof(long));
     printf("\ndouble: %d",sizeof(double));
     printf("\nlong double: %d",sizeof(long double));

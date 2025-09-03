@@ -1,7 +1,6 @@
 #include<stdio.h>
-#include<stdlib.h>
 #include<ctype.h>
-#include <string.h>
+
 
 int main(){
     int val=0, i=0;
@@ -13,7 +12,7 @@ int main(){
     i=0;
         while(N[i] != '\n'){
             c = toupper(N[i]);
-    
+
                 if(c == 'A' || c== 'E' || c == 'I' ||c == 'L' || c == 'N' || c == 'O' || c == 'R'|| c == 'S' || c == 'T' || c == 'U')
                     val+=1;
                 else if(c == 'D' || c == 'G')
