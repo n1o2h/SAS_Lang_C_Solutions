@@ -1,53 +1,27 @@
 #include<stdio.h>
-#include <string.h>
 
 int main(){
-    char isbn[50];
-    int i=0, j;
-    size_t length;
 
-    printf("entrer isbn: ");
-    fgets(isbn, sizeof(isbn), stdin);
+    char isbn[30];
+    int i, group=1;
 
-    length = strlen(isbn);
+    printf("Entrer l'ISBN: ");
+    scanf("%s", isbn);
 
-    if(isbn[0] == '9' && isbn[1]== '7' && (isbn[3] == '9' || isbn[3] == '8'))
-        printf("prefixe GS1: %d%d%d", isbn[0], isbn[1], isbn[2]);
-    
-    for(int i=0; i<length;i++){
-        if(isbn[i] == 9 && (isbn[i+1])) 
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    while(isbn[i] != '\0'){
-        if(isbn[i] != '-'){
-            
-        }
-        else{
-            ++i;
-            printf("\n%c", isbn[i]);
-            i++;
+    printf("le prefixe GS1 : ");
+    for(i=0; isbn[i]!='\0'; i++){ // 978-0-393-97950-3
+        if(isbn[i] == '-'){
+            group++;
+            printf("\n");
+            switch(group){
+                case 2: printf("Identifiant de groupe: ");break;
+                case 3: printf("Code de l'editeur : ");break;
+                case 4: printf("Numero d'article: ");break;
+                case 5: printf("Chiffre de controle: ");break;
+            }
+        }else{
+            printf("%c", isbn[i]);
         }
     }
-
-    return 0;
-}
+        return 0;
+    }
