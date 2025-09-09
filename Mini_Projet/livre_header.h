@@ -7,15 +7,16 @@
 
 // Définition de la structure du livre
 typedef struct {
-    char isbn[30];
+    char isbn[30];//les ajouter comme une structure sous structure
     char titre[30];
     char auteur[30];
     float prix;
     int quantite;
 } livre;
 
+void menue();
 // Ajouter un Livre au Stock
-void ajouter_livre(livre l[], int n);
+void ajouter_livre(livre l[], int *n, int *count);
 
 // Afficher Tous les Livres Disponibles
 void afficher_livre(livre l[], int n);
@@ -34,23 +35,15 @@ void supprimer_livre(livre *l, int *n, char titre[30]);
 
 // Afficher le Nombre Total de Livres en Stock
 int nbr_Tlivre(livre l[], int n);
-
+//Verification de l'ISBN
 int verifierISBN(char *isbn);
-
-//Trie croissant des livre par ordre alphabetique
-void tri_livre_aplh_cr(livre l[], int n);
-
+//Tri croissant par isbn
+void tri_livre_ISBN(livre l[], int n);
 //Permutation des livres
 void echanger(livre *l,livre *M);
-
-//Trie decroissant des livre par ordre alphabetique
-void tri_livre_aplh_dec(livre l[], int n);
-
-//Trie croissant des livre par le nombre de quatntite
-void tri_livre_quant_cr(livre l[], int n);
-
-//Trie decroissant des livre par le nombre de quantite
-void tri_livre_quant_dec(livre l[], int n);
-
+//Trie croissant et decroissant des livre par ordre alphabetique
+void tri_livre_aplh(livre l[], int n,int order);
+//Trie croissant et decroissant  des livre par le nombre de quatntite
+void tri_livre_quant(livre l[], int n, int order);
 
 #endif
